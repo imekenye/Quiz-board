@@ -1,0 +1,38 @@
+html,body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+.board-description {
+    background-color: #CD809B;
+    height: 30rem;
+    justify-content: center;
+    margin-top: 20rem;
+}
+.questions {
+    background-color: #f8f8f8;
+}
+h1,p {
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 0.9;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    font-weight: 300;
+}
+.line1 {
+    height: 0.1rem;
+    width: 10rem;
+    background-color: #f8f8f8;
+    align-self: center;
+}
