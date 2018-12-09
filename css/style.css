@@ -2,20 +2,20 @@ html,body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.container-fluid {
     height: 100vh;
     background-color: #f8f8f8;
 }
 .board-description {
     background-color: #CD809B;
-    height: 30rem;
+    height: 25rem;
     justify-content: center;
     margin-top: 20rem;
 }
 .questions {
     background-color: #f8f8f8;
 }
-h1,p {
+h1 {
     color: white;
     text-align: center;
 }
@@ -25,14 +25,63 @@ h1 {
     line-height: 0.9;
 }
 
-p {
+h2 {
+    color: #CD809B;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+p.quizBoardp {
     font-size: 1.3rem;
     line-height: 1.2;
     font-weight: 300;
+    color: white;
+    text-align: center;
 }
 .line1 {
     height: 0.1rem;
     width: 10rem;
     background-color: #f8f8f8;
     align-self: center;
+}
+p#question {
+    color: #484B55;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.form-check {
+    font-size: 1.2rem;
+    color: #484B55;
+}
+
+.form-check-input {
+    margin-left: -2rem;
+}
+
+a#submit-btn {
+    background-color: #CD809B;
+    width: 20rem;
+    height: 10rem;;
+    color: white; 
+}
+
+.btn-primary {
+    background-color: #CD809B;
+    border: none;
+    border-radius: none;
+    padding: 1rem 2rem;
+    float: right;
+    width: 20rem;
+    height: 5rem;
+    margin-right: 20rem;
+    margin-bottom: 10rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+}
+
+.fas {
+    margin-left: 1rem;
 }
