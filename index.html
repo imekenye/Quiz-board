@@ -20,95 +20,116 @@
             </div>
             <div class="questions col-md-7">
                 <h2>Javascript Basics</h2>
-                <form class="px-5">
+                <form class="px-5" id="quest">
                     <p id="question">Q1. Javascript is a ____ language.</p>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input form-color" id="radio1" name="optradio" value="option1" checked>Scripting
+                      <label>
+                        <input type="radio" name="quest1" value="5">Scripting
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label>
+                        <input type="radio" name="quest1" value="0">Application
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio2">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Application
+                      <label>
+                        <input type="radio" name="quest1" value="0">Programming
                       </label>
                     </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" disabled>Programming
-                      </label>
-                    </div>
+
+                    <p> <span id="err1"></span></p>
 
                     <p id="question">Q2. Javascript is ____ scripting language.</p>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Browser
+                      <label>
+                        <input type="radio"  name="quest2" value="5">Browser
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio2">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">ISP
+                      <label>
+                        <input type="radio" name="quest2" value="0">ISP
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" disabled>Server
+                      <label>
+                        <input type="radio" name="quest2" value="0">Server
                       </label>
                     </div>
+
+                    <p> <span id="err2"></span></p>
 
                     <p id="question">Q3. "Add and Assignment" operator is shown by this symbol.</p>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>+==
+                      <label>
+                        <input type="radio" name="quest3" value="0">+==
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio2">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">+=
+                      <label>
+                        <input type="radio"  name="quest3" value="5">+=
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" disabled>==+
+                      <label>
+                        <input type="radio" name="quest3" value="0">==+
                       </label>
                     </div>
+
+                    <p> <span id="err3"></span></p>
 
                     <p id="question">Q4. Variable can hold ____ value at a time</p>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Multiple
+                      <label>
+                        <input type="radio" name="quest4" value="0">Multiple
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio2">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Single
+                      <label>
+                        <input type="radio" name="quest4" value="5">Single
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" disabled>Double
+                      <label>
+                        <input type="radio" name="quest4" value="0">Double
                       </label>
                     </div>
 
+                    <p> <span id="err4"></span></p>
+
                     <p id="question">Q5. Java Statement terminated by ____ </p>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Comma
+                      <label>
+                        <input type="radio" name="quest5" value="0">Comma
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label" for="radio2">
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Semicolon
+                      <label>
+                        <input type="radio" name="quest5" value="5">Semicolon
                       </label>
                     </div>
                     <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" disabled>Fullstop
+                      <label>
+                        <input type="radio" name="quest5" value="0">Fullstop
                       </label>
                     </div>
+
+                    <p> <span id="err5"></span></p>
+
+                    <button type="submit" class="btn btn-primary" id="submit">SUBMIT<i class="fas fa-arrow-right"></i></button>
+
                   </form>
-                  <button class="btn btn-primary">SUBMIT<i class="fas fa-arrow-right"></i></button>
+                  
+                  <div class="displayResult">
+                    <p> <span id="display"></span> </p>
+    
+                  </div>
             </div>
         </div>
     </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
