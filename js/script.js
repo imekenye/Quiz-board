@@ -1,9 +1,12 @@
+
+// Business (or back-end) logic:
 var quizResults = function(numOne, numTwo ,numThree, numFour, numFive){
     return numOne + numTwo + numThree + numFour + numFive;
 
 
 };
 
+//User interface (or front-end) logic:
 
 $(document).ready(function(){
 
@@ -35,12 +38,14 @@ $("form#quest").submit(function(event){
   }
   var finalResult = quizResults(questOne, questTwo, questThree, questFour, questFive);
 
-  $("#display").text("Your score is: " + finalResult + " /25");
+  $("#display").text( "Your Score is " + finalResult + " /25");
+
 
   event.preventDefault();
   $("#quest").fadeOut();
-  $(".board-description").hide();
   $(".displayResult").show();
   $("form").trigger("reset");
+
+  
 });
 });
