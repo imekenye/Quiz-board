@@ -1,5 +1,4 @@
 # Quiz Board
-#### Webpage showcasing my work, 25 november 2018
 #### By **Isaiah Mekenye**
 ## Description
 A webpage that allows the user to answer questions on javascript from a multiple choice questions
