@@ -6,23 +6,23 @@ html,body {
 
 }
 
-
 .container-fluid{
     height: 100vh;
     background-color: #f8f8f8;
 
 }
+
 #board {
     display: none;
 }
+
 .board-description {
     height: 100vh;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    /* height: 25rem;
-    margin-top: 20rem; */
     justify-content: center;
     
 }
+
 .questions {
     margin: 0;
     height: 100vh;
@@ -32,11 +32,10 @@ html,body {
     padding-left: 10rem;
     padding-right: 10rem;
 }
+
 h1 {
     color: white;
     text-align: center;
-}
-h1 {
     font-weight: 900;
     font-size: 5rem;
     line-height: 0.9;
@@ -59,22 +58,23 @@ p.quizBoardp {
     color: white;
     text-align: center;
 }
+
 .line1 {
     height: 0.1rem;
     width: 10rem;
     background-color: #f8f8f8;
     align-self: center;
 }
+
 p.quest {
     color: #484B55;
     font-weight: 500;
     font-size: 2rem;
 }
+
 input {
     margin-right: 1rem;
-
 }
-
 
 .form-check {
     font-size: 1.5rem;
@@ -93,7 +93,6 @@ a#submit-btn {
 }
 
 .btn-primary {
-    /* background-color: #CD809B; */
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border: none;
     border-radius: none;
@@ -134,10 +133,12 @@ span#display {
     bottom: 50%;
     transform: translate(-50%,-50%);
 }
+
 span.err {
     margin-left: 3rem;
     color: red;
 }
+
 form#quest.px-5 {
     height: 100vh;
 }
