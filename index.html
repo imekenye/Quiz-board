@@ -13,14 +13,15 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="board-description d-flex flex-column col-md-5">
+            <div class="board-description d-flex flex-column col-md-5" id="board">
                 <h1 class="quizBoard">Quiz<br> Board</h1>
                 <p class="quizBoardp"> Questions to test students <br>on their javascript basics skills</p>
                 <span class="line1"></span>
             </div>
             <div class="questions col-md-7">
-                <h2>Javascript Basics</h2>
+                
                 <form class="px-5" id="quest">
+                    <h2>Javascript Basics</h2>
                     <p class="quest">Q1. Javascript is a ____ language.</p>
                     <div class="form-check">
                       <label>
@@ -115,16 +116,17 @@
                       </label>
                     </div>
 
-                    <p> <span id="err5"></span></p>
+                    <p> <span class="err" id="err5"></span></p>
 
                     <button type="submit" class="btn btn-primary" id="submit">SUBMIT<i class="fas fa-arrow-right"></i></button>
 
                   </form>
+                  <div class="displayResult">
+                      <p> <span id="display"></span> </p>
+        
+                  </div>
             </div>
-            <div class="displayResult">
-              <p> <span id="display"></span> </p>
-
-            </div>
+            
         </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
