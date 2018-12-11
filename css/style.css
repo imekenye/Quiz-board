@@ -124,11 +124,12 @@ a#submit-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 
 span#display {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     bottom: 50%;
     transform: translate(-50%,-50%);
@@ -141,4 +142,29 @@ span.err {
 
 form#quest.px-5 {
     height: 100vh;
+}
+
+a.retake {
+    font-weight: 300;
+    width: 20rem;
+    text-align: center;
+    height: 5rem;;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding-top: 1.7rem;
+    text-decoration: none;
+    border: 1px solid white;
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+
+}
+
+a.retake:hover {
+    color: #764ba2;
+    background-color: #fff;
 }
