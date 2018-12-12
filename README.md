@@ -10,11 +10,12 @@ The following installations should be run in your command line interface.
 * Run
 ``` https://github.com/imekenye/Quiz-board.git ```
 ## Behaviour Driven Development
-| Input                           | Output                        |
-|---------------------------------|-------------------------------|
-|                                 |                               |
-|                                 |                               |
-|                                 |                               |
+| Input                                       | Output                               |
+|---------------------------------------------|--------------------------------------|
+| 1. Click start quiz.                        | Show question one.                   |
+| 2. Answer question displayed then click next| Show next question.                  |
+| 3. Submit final answer.                     | See final score.                     |
+| 4. Click 'Retake Quiz' to retry.            | Takes you back to the first question.|
 ## Known Bugs
 There no bugs but if any you contact me <a href="https://github.com/imekenye/Quiz-board/issues/new">HERE</a>
 ## Technologies Used
