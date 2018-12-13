@@ -1,14 +1,77 @@
 
-// Business (or back-end) logic:
-var quizResults = function(numOne, numTwo ,numThree, numFour, numFive){
+// --------------------------------------------------
+    //User interface (or front-end) logic:
+// ---------------------------------------------------
+
+$(document).ready(function(){
+
+  $('.questForm').hide();
+  $('#Q1').show();
+
+ 
+
+  $('#Q1 #next').click (function() {
+    $('.questForm').hide();
+    $('#Q2').fadeIn(300);
+    return false;
+  });
+
+  $('#Q2 #previous').click (function() {
+    $('.questForm').hide();
+    $('#Q1').fadeIn(300);
+    return false;
+  });
+
+  
+
+  $('#Q2 #next').click (function() {
+    $('.questForm').hide();
+    $('#Q3').fadeIn(300);
+    return false;
+  });
+
+  $('#Q3 #previous').click (function() {
+    $('.questForm').hide();
+    $('#Q2').fadeIn(300);
+    return false;
+  });
+
+
+  $('#Q3 #next').click (function() {
+    $('.questForm').hide();
+    $('#Q4').fadeIn(300);
+    return false;
+  });
+
+  $('#Q4 #previous').click (function() {
+    $('.questForm').hide();
+    $('#Q3').fadeIn(300);
+    return false;
+  });
+
+
+  $('#Q4 #next').click (function() {
+    $('.questForm').hide();
+    $('#Q5').fadeIn(300);
+    return false;
+  });
+
+  $('#Q5 #previous').click (function() {
+    $('.questForm').hide();
+    $('#Q4').fadeIn(300);
+    return false;
+  });
+
+  // ---------------------------------------------------
+      // Business (or back-end) logic:
+  // ---------------------------------------------------
+
+  var quizResults = function(numOne, numTwo ,numThree, numFour, numFive){
     return numOne + numTwo + numThree + numFour + numFive;
 
 
-};
+}; 
 
-//User interface (or front-end) logic:
-
-$(document).ready(function(){
 
 $("form#quest").submit(function(event){
   var questOne = parseInt($("input:radio[name=quest1]:checked").val());
@@ -39,6 +102,9 @@ $("form#quest").submit(function(event){
   var finalResult = quizResults(questOne, questTwo, questThree, questFour, questFive);
 
   $("#display").text( "Your Score is " + finalResult + " /25");
+
+
+  
 
 
   event.preventDefault();

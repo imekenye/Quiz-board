@@ -13,56 +13,73 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="board-description d-flex flex-column col-md-5" id="board">
-                <h1 class="quizBoard">Quiz<br> Board</h1>
-                <p class="quizBoardp"> Questions to test students <br>on their javascript basics skills</p>
-                <span class="line1"></span>
+        <div class="row ">
+            <div class="align-items-center justify-content-center board-description d-flex col-md-5 col-sm-12 col-xs-12 mh-100" id="board">
+                <div class=" d-flex flex-column position-fixed mx-auto">
+                  <h1 class="quizBoard align-self-center">Quiz<br> Board</h1>
+                  <p class="text align-self-center quizBoardp"> Questions to test students <br>on their javascript basics skills</p>
+                  <span class="line1"></span>
+                </div> 
             </div>
-            <div class="questions col-md-7">
+            <div class="questions  d-flex flex-column justify-content-between align-items-sm-stretch align-content-center col-md-7 col-xs-12">
                 
-                <form class="px-5" id="quest">
-                    <h2>Javascript Basics</h2>
-                    <p class="quest">Q1. Javascript is a ____ language.</p>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest1" value="5">Scripting
-                      </label>
-                    </div>
+                <form class="px-5 mh-100 col-xs-12 " id="quest">
+                    <!-- <h2 class="text-center mb-5">Javascript Basics</h2> -->
+                   <div class="questForm align-self-center align-self-sm-center col-xs-12" id="Q1">
 
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest1" value="0">Application
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest1" value="0">Programming
-                      </label>
-                    </div>
+                      <p class="quest">Q1. Javascript is a ____ language.</p>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest1" value="5">Scripting
+                        </label>
+                      </div>
 
-                    <p> <span class="err" id="err1"></span></p>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest1" value="0">Application
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest1" value="0">Programming
+                        </label>
+                      </div>
+                      <p> <span class="err" id="err1"></span></p>
+                      <div class="footerBtn d-flex justify-content-end align-items-center">
+                          <div class="next float-right"><a href="" id="next">Next</a><i class="fas fa-arrow-right"></i></div>
+                      </div>
+                   </div> 
 
-                    <p class="quest">Q2. Javascript is ____ scripting language.</p>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio"  name="quest2" value="5">Browser
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest2" value="0">ISP
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest2" value="0">Server
-                      </label>
-                    </div>
+                   <div class="questForm align-self-center align-self-sm-center col-xs-12" id="Q2">
 
-                    <p> <span class="err" id="err2"></span></p>
+                      <p class="quest">Q2. Javascript is ____ scripting language.</p>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio"  name="quest2" value="5">Browser
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest2" value="0">ISP
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest2" value="0">Server
+                        </label>
+                      </div>
 
-                    <p class="quest">Q3. "Add and Assignment" operator is shown by this symbol.</p>
+                      <p> <span class="err" id="err2"></span></p>
+                      <div class="footerBtn d-flex justify-content-between align-items-center">
+                          <div class="previous float-left"><i class="fas fa-arrow-left mx-3"></i><a href="" id="previous">Previous</a></div>
+                          <div class="next float-right"><a href="" id="next">Next</a><i class="fas fa-arrow-right"></i></div>
+                      </div>
+                   </div>
+                    
+
+                   <div class="questForm align-self-center align-self-sm-center col-xs-12" id="Q3">
+
+                      <p class="quest">Q3. "Add & Assignment" operator is shown by.</p>
                     <div class="form-check">
                       <label>
                         <input type="radio" name="quest3" value="0">+==
@@ -80,51 +97,77 @@
                     </div>
 
                     <p> <span class="err" id="err3"></span></p>
-
-                    <p class="quest">Q4. Variable can hold ____ value at a time</p>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest4" value="0">Multiple
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest4" value="5">Single
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest4" value="0">Double
-                      </label>
+                    <div class="footerBtn d-flex justify-content-between align-items-center">
+                        <div class="previous float-left"><i class="fas fa-arrow-left mx-3"></i><a href="" id="previous">Previous</a></div>
+                        <div class="next float-right"><a href="" id="next">Next</a><i class="fas fa-arrow-right"></i></div>
                     </div>
 
-                    <p> <span class="err" id="err4"></span></p>
+                   </div>
 
-                    <p class="quest">Q5. Java Statement terminated by ____ </p>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest5" value="0">Comma
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest5" value="5">Semicolon
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label>
-                        <input type="radio" name="quest5" value="0">Fullstop
-                      </label>
+                   <div class="questForm align-self-center align-self-sm-center col-xs-12" id="Q4">
+
+                      <p class="quest">Q4. Variable can hold ____ value at a time</p>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest4" value="0">Multiple
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest4" value="5">Single
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label>
+                          <input type="radio" name="quest4" value="0">Double
+                        </label>
+                      </div>
+                      
+                      <p> <span class="err" id="err4"></span></p>
+                      <div class="footerBtn d-flex justify-content-between align-items-center">
+                          <div class="previous float-left"><i class="fas fa-arrow-left mx-3"></i><a href="" id="previous">Previous</a></div>
+                          <div class="next float-right"><a href="" id="next">Next</a><i class="fas fa-arrow-right"></i></div>
+                      </div>
+
+                   </div>
+                    
+                    <div class="questForm align-self-center align-self-sm-center col-xs-12" id="Q5">
+
+                        <p class="quest">Q5. Java Statement terminated by ____ </p>
+                        <div class="form-check">
+                          <label>
+                            <input type="radio" name="quest5" value="0">Comma
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label>
+                            <input type="radio" name="quest5" value="5">Semicolon
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label>
+                            <input type="radio" name="quest5" value="0">Fullstop
+                          </label>
+                        </div>
+    
+                        <p> <span class="err" id="err5"></span></p>
+                        <div class="footerBtn d-flex justify-content-between align-items-center">
+                            <div class="previous float-left"><i class="fas fa-arrow-left mx-3"></i><a href="" id="previous">Previous</a></div>
+                            <button type="submit" class="btn btn-primary" id="submit">SUBMIT<i class="fas fa-arrow-right"></i></button>
+
+                            <!-- <div class="next float-right submit"><a href="" id="submit" class="ml-5 mt-5">Submit<i class="fas fa-chevron-right sub-arrow"></i></a></div> -->
+                        </div>
+                        
                     </div>
 
-                    <p> <span class="err" id="err5"></span></p>
+                    
 
-                    <button type="submit" class="btn btn-primary" id="submit">SUBMIT<i class="fas fa-arrow-right"></i></button>
+                   
 
                   </form>
-                  <div class="displayResult">
+                  <div class="displayResult rounded">
                       <p> <span id="display"></span> </p>
-                    <a href="quiz.html" class="retake">Retake Quiz</a>
+                    <a href="quiz.html" class="retake rounded">Retake Quiz</a>
                   </div>
             </div>
             

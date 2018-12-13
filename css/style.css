@@ -19,22 +19,28 @@ html,body {
 }
 
 .board-description {
-    height: 100vh;
     margin: 0;
+    background-color: #667eea;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     justify-content: center;
+
+    
     
 }
 
+.row {
+    height: 100%;
+}
+
 .questions {
-    margin: 0;
-    height: 100vh;
+    margin-top: 0rem;
     background-color: #f8f8f8;
-    padding-top: 1rem;
+    /* padding-top: 1rem;
     padding-bottom: 10rem;
     padding-left: 10rem;
-    padding-right: 10rem;
+    padding-right: 10rem; */
 }
+
 
 h1 {
     color: white;
@@ -109,6 +115,33 @@ input {
     margin-left: -2rem;
 }
 
+.questForm {
+    margin-right: auto;
+    margin-top: 20rem;
+    padding: 7rem;
+    background-color: #fff;
+    color: #764ba2;
+    height: 30rem;  
+    border-radius: 1rem;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .2); 
+}
+
+.footerBtn {
+    font-size: 1.5rem;
+    color: #764ba2;
+    height: 5rem;
+    width: 100%;
+}
+
+.arrow-right {
+    background-color: #fff;
+    color: white;
+}
+
+label {
+    color: #667eea;
+}
+
 a#submit-btn {
     background-color: #CD809B;
     width: 20rem;
@@ -119,13 +152,13 @@ a#submit-btn {
 .btn-primary {
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border: none;
-    border-radius: none;
+    border-radius: 0.5rem;
     padding: 1rem 2rem;
     float: right;
     width: 20rem;
     height: 5rem;
-    margin-right: 20rem;
-    margin-bottom: 10rem;
+    margin-right: 0;
+    border: none;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     font-weight: 200;
@@ -219,4 +252,33 @@ a.btnStart:hover {
     color: #fff;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     width: 25rem;
+}
+
+.col-sm-12 {
+    width: 100vw;
+}
+
+.submit {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 4rem;
+    width: 14rem;
+    color: white;
+    border-radius: 0.3rem;
+    padding-top: 1rem;
+}
+
+.submit a {
+    color: white;
+    
+}
+a#submit {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.sub-arrow {
+    margin-left: 2rem;
+}
+a, a:hover {
+    text-decoration: none;
 }
