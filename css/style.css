@@ -23,9 +23,6 @@ html,body {
     background-color: #667eea;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     justify-content: center;
-
-    
-    
 }
 
 .row {
@@ -35,10 +32,6 @@ html,body {
 .questions {
     margin-top: 0rem;
     background-color: #f8f8f8;
-    /* padding-top: 1rem;
-    padding-bottom: 10rem;
-    padding-left: 10rem;
-    padding-right: 10rem; */
 }
 
 
