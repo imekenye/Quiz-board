@@ -9,12 +9,18 @@ The following installations should be run in your command line interface.
 * On the terminal, navigate to your workspace directory.
 * Run
 ``` https://github.com/imekenye/Quiz-board.git ```
+## Behaviour Driven Development
+| Input                           | Output                        |
+|---------------------------------|-------------------------------|
+|                                 |                               |
+|                                 |                               |
+|                                 |                               |
 ## Known Bugs
 There no bugs but if any you contact me <a href="https://github.com/imekenye/Quiz-board/issues/new">HERE</a>
 ## Technologies Used
 * HTML
 * CSS
-* JAVASCRIPT
+* JAVASCRIPT/JQUERY
 ## Support and contact details
 If you got questions or need support contact me via email [at]ismekenye[at]gmail[dot]com
 ### License
