@@ -22,6 +22,7 @@ There no bugs but if any you contact me <a href="https://github.com/imekenye/Qui
 * HTML
 * CSS
 * JAVASCRIPT/JQUERY
+* BOOTSTRAP
 ## Support and contact details
 If you got questions or need support contact me via email [at]ismekenye[at]gmail[dot]com
 ### License
